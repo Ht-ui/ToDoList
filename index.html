@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todolist</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/rem.js"></script>
+</head>
+<body>
+
+	<!-- html结构 -->
+	<!-- 
+
+	.main>(.header>(.logo{Todolist}+input))+(.done>(h3>span.title{正在进行}+span.num)+.list)+(.done>(h3>span.title{已完成}+span.num)+.list)
+
+	 -->
+
+	 <div class="main">
+	 	<div class="header">
+	 		<div class="logo">ToDoList</div>
+	 		<input type="text" placeholder="请输入待办事项" id="input">
+	 	</div>
+	 	<div class="doing todo">
+	 		<h3><span class="title">正在进行</span><span class="num" data-index="${index}">0</span></h3>
+	 		<div class="list">
+	 			<!-- <div class="todoItem">
+	 				<input type="checkbox" name="" id="">
+	 				<div class="content">待办事项网页设计</div>
+	 				<div class="del">Del</div>
+	 			</div> -->
+	 		</div>
+	 	</div>
+	 	<div class="done todo">
+	 		<h3><span class="title">已完成</span><span class="num" data-index="${index}">0</span></h3>
+	 		<div class="list">
+	 			<!-- <div class="todoItem">
+	 				<input type="checkbox" name="" id="" checked="checked">
+	 				<div class="content">中午在家做饭</div>
+	 				<div class="del">Del</div>
+	 			</div> -->
+	 		</div>
+	 	</div>
+	 </div>
+
+	 <div class="footer">
+	 	Copyright &copy; 2020/8/19 Todolist
+	 </div>
+</body>
+</html>
+
+<script type="text/javascript" src="js/todolist.js"></script>
